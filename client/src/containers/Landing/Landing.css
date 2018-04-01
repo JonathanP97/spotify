@@ -1,0 +1,19 @@
+h3 {
+	margin: 0;
+}
+
+.Landing-Header {
+	background-color: #50F2D7;
+	height: 70px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.Landing-Body {
+	background-color: #FF5959;
+	height: 70px;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+} 
