@@ -1,19 +1,36 @@
+body {
+	background-color: #D98989;
+}
+
 h3 {
 	margin: 0;
+	padding: 10px;
 }
 
 .Landing-Header {
 	background-color: #50F2D7;
-	height: 70px;
-	width: 500px;
+	height: 50px;
+	width: 350px;
 	margin-left: auto;
 	margin-right: auto;
 } 
 
 .Landing-Body {
-	background-color: #FF5959;
+	background-color: #50F2D7;
 	height: 70px;
-	width: 150px;
+	width: 300px;
+	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
 } 
+
+.btn {
+	margin: 12px;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	padding: 8px;
+	background-color: #FFA1A1;
+	border: 2px solid green;
+	font-size: 104%;
+	font-weight: 650;
+}
