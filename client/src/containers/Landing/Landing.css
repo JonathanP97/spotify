@@ -17,7 +17,6 @@ h3 {
 
 .Landing-Body {
 	background-color: #50F2D7;
-	height: 70px;
 	width: 300px;
 	margin-top: 30px;
 	margin-left: auto;
@@ -33,4 +32,14 @@ h3 {
 	border: 2px solid green;
 	font-size: 104%;
 	font-weight: 650;
+}
+
+.Back-Btn {
+	display: inline-block;
+	float: right;
+	padding: 2px;
+	width: 20px;
+	background-color: grey;
+	border: 1px solid black;
+	opacity: 0.9;
 }
