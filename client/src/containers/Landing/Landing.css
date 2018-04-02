@@ -35,7 +35,7 @@ h3 {
 }
 
 .Back-Btn {
-	display: inline-block;
+	display: block;
 	float: right;
 	padding: 2px;
 	width: 20px;

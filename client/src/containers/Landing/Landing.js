@@ -20,8 +20,9 @@ class Landing extends Component {
     this.setState({action: name});
   }
 
-  handleChange() {
-    // to do...
+  handleChange(event) {
+    console.log(event.target.value);
+    console.log(event.target.name);
   }
 
   handleSubmit() {
@@ -51,12 +52,16 @@ class Landing extends Component {
             <div>
               <button className="Back-Btn" onClick={this.goBack}>x</button>
               <form onSubmit={this.handleSubmit}>
-                <input 
+                <label htmlFor="event">Event Name  </label>
+                <input
+                  id="event" 
                   type="text"
                   name="event"
                   onChange={this.handleChange}
                 />
-                <input 
+                <label htmlFor="host  ">Host</label>
+                <input
+                  id="host" 
                   type="text"
                   name="host"
                   onChange={this.handleChange}                  
