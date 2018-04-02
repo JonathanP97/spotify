@@ -59,7 +59,7 @@ class Landing extends Component {
                   name="event"
                   onChange={this.handleChange}
                 />
-                <label htmlFor="host  ">Host</label>
+                <label htmlFor="host">Host</label>
                 <input
                   id="host" 
                   type="text"
@@ -71,7 +71,7 @@ class Landing extends Component {
           }
           {action === 'join' &&
             <div>
-              <button className="Back-Btn" onClick={this.goBack}>X</button>
+              <button className="Back-Btn" onClick={this.goBack}>x</button>
               <p>Join</p>
             </div>
           }
