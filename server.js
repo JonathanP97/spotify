@@ -18,6 +18,10 @@ mongoose.connect( MONGODB_URI, err => {
 
 app.use( express.static( path.join(__dirname, '/client/build/')));
 
+app.get('/test', (req, res) => {
+	res.send("Hello Hello heloo");
+});
+
 app.get('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, '/client/build/index.html'));
 });

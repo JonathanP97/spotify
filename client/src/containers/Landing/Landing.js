@@ -21,12 +21,16 @@ class Landing extends Component {
   }
 
   handleChange(event) {
-    console.log(event.target.value);
-    console.log(event.target.name);
+    const name = event.target.name;
+
+    this.setState({
+      [name]: event.target.value.trim()
+    });
   }
 
-  handleSubmit() {
-    // to do
+  handleSubmit(event) {
+    event.preventDefault();
+    console.log(this.state);
   }
 
   goBack() {
@@ -66,6 +70,7 @@ class Landing extends Component {
                   name="host"
                   onChange={this.handleChange}                  
                 />
+                <button>Next</button>
               </form>
             </div>
           }
