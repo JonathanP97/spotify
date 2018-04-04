@@ -2,14 +2,14 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var EventSchema = new Schema({
-  event-name: {
+  eventName: {
     type: String
   },
-  host-name: {
+  hostName: {
     type: String,
     required: 'need host name'
   },
-  host-id: {
+  hostId: {
     type: Schema.Types.ObjectId,
     ref: "User"
   },

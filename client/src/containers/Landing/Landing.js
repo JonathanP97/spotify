@@ -6,13 +6,20 @@ class Landing extends Component {
     super(props);
 
     this.state = {
-      action: 'standard'
+      action: 'standard',
+      data: null
     };
 
     this.handleClick = this.handleClick.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.goBack = this.goBack.bind(this);
+  }
+
+  componentDidMount() {
+    fetch('/users')
+      .then(res => res.json())
+      .then(users => this.setState({data: users}));
   }
 
   handleClick(event) {
@@ -78,6 +85,12 @@ class Landing extends Component {
             <div>
               <button className="Back-Btn" onClick={this.goBack}>x</button>
               <p>Join</p>
+              {this.state.data.map(user => {
+                console.log(user);
+                return (
+                  <p>{user.username}</p>
+                )
+              })}
             </div>
           }
         </div>
